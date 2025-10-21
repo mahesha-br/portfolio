@@ -1,11 +1,16 @@
+import Image from "next/image";
+
 export default function ProfileComponent() {
   return (
     <div className="w-full border-y border-neutral-200/80 dark:border-neutral-800/80 ">
       <div className="max-w-3xl flex justify-center items-center h-[85%] mx-auto border-x border-neutral-200/80 dark:border-neutral-800/80">
         <div className=" h-full w-42 border-r border-neutral-200/80 dark:border-neutral-800/80 flex justify-center items-center ">
           <div className=" size-full rounded-full overflow-hidden border border-neutral-200 dark:border-neutral-800 p-0.5 ">
-            <img
-              src="/me.jpeg"
+            <Image
+              width={500}
+              height={500}
+              loading="eager"
+              src="/mahesha_b&w.jpg"
               className=" h-full w-full rounded-full object-contain "
               alt="mahesha"
             />
@@ -36,7 +41,7 @@ export default function ProfileComponent() {
             <p>AIML Developer</p>
             <p>Java Developer</p>
           </div> */}
-          <RoleRotator/>
+          <RoleRotator />
         </div>
       </div>
     </div>

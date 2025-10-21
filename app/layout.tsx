@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     
     images: [
       {
-        url: "https://www.mahesha.dev/me.jpeg",
+        url: "https://www.mahesha.dev/mahesha_b&w.jpg",
         width: 1200,
         height: 630,
         alt: "Mahesha Developer Portfolio",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "Mahesha | Full-Stack Software Developer",
     description:
       "Building modern web apps with passion. Explore Mahesha's dev portfolio.",
-    images: ["https://www.mahesha.dev/me.jpeg"],
+    images: ["https://www.mahesha.dev/mahesha_b&w.jpg"],
   },
 };
 

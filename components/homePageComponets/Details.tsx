@@ -13,7 +13,7 @@ export default function DetailsComponent(){
                   <CodeXml className=" w-4 h-4 shrink-0 text-neutral-500  " />
                 </div>
                 <p className=" font-medium text-ellipsis text-md font-mono md:leading-0 tracking-wide">
-                  MERN Full Stack & AI ML Developer
+                   Full Stack & AI ML Developer
                 </p>
               </div>
               <div className="w-full flex items-center gap-3">
