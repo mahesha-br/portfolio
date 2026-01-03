@@ -5,12 +5,28 @@
     "time": "2025-08-28",
     "live": true,
     "slug": "welcome-to-my-portfolio",
-    "sourceLink": "https://github.com/Mahesha-BR/portfolio",
+    "sourceLink": "https://github.com/mahesha-br/portfolio",
     "websiteLink": "https://mahesha.dev",
     "stack": [
       "Next.js",
       "React",
       "Tailwind CSS"
+    ]
+  },
+  {
+    "title": "Career Nest",
+    "coverImageUrl": "/career_nest_1.png",
+    "time": "2026-01-03",
+    "live": true,
+    "slug": "career-nest",
+    "sourceLink": "https://github.com/mahesha-br/career-nest",
+    "websiteLink": "https://career-nest-alpha.vercel.app",
+    "stack": [
+      "React",
+      "Tailwind CSS",
+      "Express.js",
+      "MongoDB",
+      "Node"
     ]
   }
 ]

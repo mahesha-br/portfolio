@@ -12,7 +12,10 @@
   "dependencies": {
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^15.5.0",
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
     "gray-matter": "^4.0.3",
     "jose": "^6.1.0",
     "jsonwebtoken": "^9.0.2",

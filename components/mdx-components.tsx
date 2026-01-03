@@ -1,6 +1,7 @@
 import * as React from "react";
 import { cn } from "@/utils/lib/utils";
 import { Diveder } from "@/app/page";
+import { MDXCarousel } from "./mdx-carousel";
 
 export const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
@@ -73,6 +74,7 @@ code: ({ className, children, ...props }: React.HTMLAttributes<HTMLElement>) => 
   )
 },
   Diveder,
+  Carousel: MDXCarousel,
   //   Alert,
   //   AlertTitle,
   //   AlertDescription,

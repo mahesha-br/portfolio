@@ -12,7 +12,8 @@ import {
   ReduxIcon,
   GraphQlIcon,
   ExpressIcon,
-  GitIcon
+  GitIcon,
+  NodejsIcon
 } from 'mmk-icons';
 
 export const DockerIconNew = () => {
@@ -117,6 +118,10 @@ export const techs = [
   {
     name: "Git",
     icon: <GitIcon />,
+  },
+  {
+    name:"Node",
+    icon:<NodejsIcon/>
   }
 ];
 
