@@ -4,7 +4,6 @@ import {
   TailwindIcon,
   MongoDbIcon,
   PostgresIcon,
-  SqlIcon,
   HtmlIcon,
   CssIcon,
   JsIcon,
@@ -78,10 +77,6 @@ export const techs = [
   {
     name: "PostgreSQL",
     icon: <PostgresIcon />,
-  },
-  {
-    name: "SQL",
-    icon: <SqlIcon />,
   },
   {
     name: "HTML",

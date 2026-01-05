@@ -24,7 +24,7 @@ export default function AboutComponent() {
           className={`md:w-3xl ${ibmPlexMono.variable} w-full border-x tracking-wide border-neutral-200/80 dark:border-neutral-800/80 flex flex-col gap-4 text-neutral-800 dark:text-neutral-200 mx-auto px-4 py-3 `}
         >
           <p>
-            Hello, World! I&apos;m Mahesha BR — a Full Stack Developer with a strong
+            Hello, World! I&apos;m Mahesha BR - a Full Stack Developer with a strong
             foundation in both modern JavaScript technologies and Java. I&apos;m
             passionate about crafting high-performance, user-focused software
             that blends intuitive design with robust functionality.
