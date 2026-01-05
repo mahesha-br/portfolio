@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { LayoutTextFlip } from "../layout-text-flip";
 
 export default function ProfileComponent() {
   return (
@@ -36,28 +37,8 @@ export default function ProfileComponent() {
               Mahesha BR
             </h2>
           </div>
-          {/* <div className="h-[20%] text-neutral-400 font-light w-full px-4 flex items-center ">
-            <p>Full Stack Developer</p>
-            <p>AIML Developer</p>
-            <p>Java Developer</p>
-          </div> */}
-          <RoleRotator />
-        </div>
-      </div>
-    </div>
-  );
-}
-
-
-
-export function RoleRotator() {
-  return (
-    <div className="h-[20%] w-full text-neutral-400 font-light px-4 overflow-hidden">
-      <div className="relative h-8 overflow-hidden w-full text-wrap md:w-1/3">
-        <div className="animate-roles bg-repeat overflow-hidden w-full h-fit">
-          <p className="absolute w-full  rounded mt-1  text-center">Full Stack Developer</p>
-          <p className="absolute w-full rounded mt-1 text-center">AIML Developer</p>
-          <p className="absolute w-full rounded mt-1 text-center">Java Developer</p>
+          <LayoutTextFlip
+          words={["Full Stack Developer", "AIML Developer", "Java Developer"]}/>
         </div>
       </div>
     </div>
