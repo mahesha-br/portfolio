@@ -37,8 +37,10 @@ export default function ProfileComponent() {
               Mahesha BR
             </h2>
           </div>
+          <div className="flex items-center mt-2">
           <LayoutTextFlip
           words={["Full Stack Developer", "AIML Developer", "Java Developer"]}/>
+          </div>
         </div>
       </div>
     </div>
