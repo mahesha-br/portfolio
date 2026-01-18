@@ -12,7 +12,8 @@ import {
   GraphQlIcon,
   ExpressIcon,
   GitIcon,
-  NodejsIcon
+  NodejsIcon,
+  FireBaseIcon
 } from 'mmk-icons';
 
 export const DockerIconNew = () => {
@@ -48,6 +49,56 @@ export const PythonIcon = () => {
     </svg>
   )
 }
+
+export const CohereAI = ({
+  width = 20,
+  height = 20,
+  className = "",
+  style = {},
+  ...props
+}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 20 20"
+      fill="none"
+      className={className}
+      style={style}
+      {...props}
+    >
+      <g clipPath="url(#clip0)">
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M6.81969 11.9081C7.34472 11.9081 8.3891 11.8785 9.8327 11.2692C11.5149 10.559 14.8619 9.2699 17.2762 7.94576C18.9648 7.01963 19.7049 5.79474 19.7049 4.14523C19.705 1.85589 17.8949 0 15.6621 0H6.30704C3.09989 0 0.5 2.66571 0.5 5.95406C0.5 9.2424 2.93427 11.9081 6.81969 11.9081Z"
+          fill="#355146"
+        />
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M8.40234 16.0108C8.40234 14.3989 9.34877 12.9456 10.8008 12.3277L13.7469 11.0741C16.7269 9.80599 20.0069 12.0514 20.0069 15.3595C20.0069 17.9226 17.9801 20.0001 15.4803 19.9994L12.2906 19.9985C10.143 19.998 8.40234 18.2128 8.40234 16.0108Z"
+          fill="#D18EE2"
+        />
+        <path
+          d="M3.8476 12.6914C1.99874 12.6914 0.5 14.2281 0.5 16.1237V16.5683C0.5 18.4639 1.99874 20.0005 3.8476 20.0005C5.69639 20.0005 7.19513 18.4639 7.19513 16.5683V16.1237C7.19513 14.2281 5.69639 12.6914 3.8476 12.6914Z"
+          fill="#FF7759"
+        />
+      </g>
+
+      <defs>
+        <clipPath id="clip0">
+          <rect width="20" height="20" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+
+
+
 
 export const techs = [
   {
@@ -117,6 +168,14 @@ export const techs = [
   {
     name:"Node",
     icon:<NodejsIcon/>
+  },
+  {
+    name:"Firebase",
+    icon:<FireBaseIcon/>
+  },
+  {
+    name:"Cohere AI",
+    icon:<CohereAI/>
   }
 ];
 

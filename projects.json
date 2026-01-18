@@ -28,5 +28,23 @@
       "MongoDB",
       "Node"
     ]
+  },
+  {
+    "title": "Smart Resume Screening",
+    "coverImageUrl": "/resume_1.png",
+    "time": "2026-01-18",
+    "live": true,
+    "slug": "smart-resume-screening",
+    "sourceLink": "https://github.com/mahesha-br/score_preresume",
+    "websiteLink": "https://score-preresume.vercel.app",
+    "stack": [
+      "React",
+      "Tailwind CSS",
+      "Express.js",
+      "MongoDB",
+      "Node",
+      "Firebase",
+      "Cohere AI"
+    ]
   }
 ]
