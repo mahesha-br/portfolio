@@ -21,7 +21,7 @@
     "jose": "^6.1.0",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.536.0",
-    "mmk-icons": "^0.0.25",
+    "mmk-icons": "^0.0.32",
     "motion": "^12.24.0",
     "next": "^16.0.10",
     "next-mdx-remote": "^6.0.0",

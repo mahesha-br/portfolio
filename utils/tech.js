@@ -13,7 +13,11 @@ import {
   ExpressIcon,
   GitIcon,
   NodejsIcon,
-  FireBaseIcon
+  FireBaseIcon,
+  ContrastAi01Icon,
+  ClerkIcon,
+  DrizzleIcon,
+  NeonIcon,
 } from 'mmk-icons';
 
 export const DockerIconNew = () => {
@@ -96,6 +100,10 @@ export const CohereAI = ({
   );
 };
 
+export const ImageKit = ({ className }) => {
+  return <img width={22} height={22} className={`${className}`} src={"/imagekit_icon.png"} alt="imageKit icon"></img>
+}
+
 
 
 
@@ -166,16 +174,132 @@ export const techs = [
     icon: <GitIcon />,
   },
   {
-    name:"Node",
-    icon:<NodejsIcon/>
+    name: "Node",
+    icon: <NodejsIcon />
   },
   {
-    name:"Firebase",
-    icon:<FireBaseIcon/>
+    name: "Firebase",
+    icon: <FireBaseIcon />
   },
   {
-    name:"Cohere AI",
-    icon:<CohereAI/>
+    name: "Cohere AI",
+    icon: <CohereAI />
+  },
+  {
+    name: "Gemini AI",
+    icon: <ContrastAi01Icon />
+  },
+  {
+    name: "Clerk",
+    icon: <ClerkIcon />
+  },
+  {
+    name: "Drizzle ORM",
+    icon: <DrizzleIcon />
+  },
+  {
+    name: "Neon",
+    icon: <NeonIcon />
+  },
+];
+
+
+export const Projecttechs = [
+  {
+    name: "Java",
+    icon: <JavaIcon />,
+  },
+  {
+    name: "Python",
+    icon: <PythonIcon />
+  },
+  {
+    name: "React",
+    icon: <ReactIcon />,
+  },
+  {
+    name: "Next.js",
+    icon: <NextjsIcon />,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: <TailwindIcon />,
+  },
+  {
+    name: "MongoDB",
+    icon: <MongoDbIcon />,
+  },
+  {
+    name: "PostgreSQL",
+    icon: <PostgresIcon />,
+  },
+  {
+    name: "HTML",
+    icon: <HtmlIcon />,
+  },
+  {
+    name: "CSS",
+    icon: <CssIcon />,
+  },
+  {
+    name: "JavaScript",
+    icon: <JsIcon />,
+  },
+  {
+    name: "TypeScript",
+    icon: <TsIcon />,
+  },
+  {
+    name: "Redux",
+    icon: <ReduxIcon />,
+  },
+  {
+    name: "GraphQL",
+    icon: <GraphQlIcon />,
+  },
+  {
+    name: "Express.js",
+    icon: <ExpressIcon />,
+  },
+  {
+    name: "Docker",
+    icon: <DockerIconNew />,
+  },
+  {
+    name: "Git",
+    icon: <GitIcon />,
+  },
+  {
+    name: "Node",
+    icon: <NodejsIcon />
+  },
+  {
+    name: "Firebase",
+    icon: <FireBaseIcon />
+  },
+  {
+    name: "Cohere AI",
+    icon: <CohereAI />
+  },
+  {
+    name: "Gemini AI",
+    icon: <ContrastAi01Icon />
+  },
+  {
+    name: "Clerk",
+    icon: <ClerkIcon />
+  },
+  {
+    name: "Drizzle ORM",
+    icon: <DrizzleIcon />
+  },
+  {
+    name: "Neon",
+    icon: <NeonIcon />
+  },
+  {
+    name: "ImageKit",
+    icon: <ImageKit />
   }
 ];
 

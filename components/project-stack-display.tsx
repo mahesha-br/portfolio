@@ -1,11 +1,11 @@
 "use client";
-import { techs } from "@/utils/tech";
+import { Projecttechs } from "@/utils/tech";
 
 export default function ProjectStackDisplay({ stack }: { stack: string[] }) {
   return (
     <div className="w-full h-full flex items-center gap-3 flex-wrap px-4 py-3">
       {stack.map((name: string, idx: number) => {
-        const match = techs.find((t) => t.name === name);
+        const match = Projecttechs.find((t) => t.name === name);
 
         return (
           <div
