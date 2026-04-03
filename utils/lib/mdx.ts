@@ -9,19 +9,19 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings"
 
 // const POSTS_PATH = path.join(process.cwd(), "content/mdx")
 // const POSTS_PATH = path.join(process.cwd(), "/app/blogs/mdx/")
-const POSTS_PATH = path.join(process.cwd(),"/app/projects/mdx/")
+const POSTS_PATH = path.join(process.cwd(), "/app/projects/mdx/")
 
 
 export async function getMdx(slug: string) {
 
   // const fullPath = path.join(POSTS_PATH, `${slug}.mdx`)
   const fullPath = path.join(`${slug}.mdx`)
-  console.log("fullPath:",fullPath)
+  console.log("fullPath:", fullPath)
 
   if (!fs.existsSync(fullPath)) {
     const emptyContent = "<p className='text-center'>File Not Found</p>"
     const mdxSource = await serialize(emptyContent)
-    return { mdxSource, frontmatter: { title: `No file with name ${slug}` } }
+    return { mdxSource, content: emptyContent, frontmatter: { title: `No file with name ${slug}` } as Record<string, any> }
   }
 
   const source = fs.readFileSync(fullPath, "utf-8")
@@ -41,5 +41,5 @@ export async function getMdx(slug: string) {
     scope: data,
   })
 
-  return { mdxSource, content, frontmatter: data }
+  return { mdxSource, content, frontmatter: data as Record<string, any> }
 }

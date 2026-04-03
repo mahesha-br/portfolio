@@ -49,38 +49,38 @@ export const components = {
     <ul className={cn("my-6 ml-6 list-disc", className)} {...props} />
   ),
 
-  
-code: ({ className, children, ...props }: React.HTMLAttributes<HTMLElement>) => {
-  // detect if it's a block of code (inside pre) or inline
-  if (String(children).includes("\n")) {
-    return (
-      <pre className="w-full overflow-x-auto bg-neutral-100 dark:bg-neutral-900 rounded-lg bg-muted p-4">
-        <code
-          className={cn(
-            "font-mono text-sm leading-relaxed",
-            className
-          )}
-          {...props}
-        >
-          {children}
-        </code>
-      </pre>
-    )
-  }
 
-  // inline code
-  return (
-    <code
-      className={cn(
-        "relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm",
-        className
-      )}
-      {...props}
-    >
-      {children}
-    </code>
-  )
-},
+  code: ({ className, children, ...props }: React.HTMLAttributes<HTMLElement>) => {
+    // detect if it's a block of code (inside pre) or inline
+    if (String(children).includes("\n")) {
+      return (
+        <pre className="w-full overflow-x-auto bg-neutral-100 dark:bg-neutral-900 rounded-lg bg-muted p-4">
+          <code
+            className={cn(
+              "font-mono text-sm leading-relaxed",
+              className
+            )}
+            {...props}
+          >
+            {children}
+          </code>
+        </pre>
+      )
+    }
+
+    // inline code
+    return (
+      <code
+        className={cn(
+          "relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm",
+          className
+        )}
+        {...props}
+      >
+        {children}
+      </code>
+    )
+  },
   Diveder,
   Carousel: MDXCarousel,
   //   Alert,
