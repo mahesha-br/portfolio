@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./Carousel"
 import Autoplay from "embla-carousel-autoplay"
@@ -13,12 +15,12 @@ export function MDXCarousel({ images, alt = "carousel image" }: MDXCarouselProps
   return (
     <div className="my-6">
       <Carousel
-      plugins={[
-        Autoplay({
-          delay: 2000,
-        }),
-      ]}
-       className="w-full max-w-xl mx-auto">
+        plugins={[
+          Autoplay({
+            delay: 2000,
+          }),
+        ]}
+        className="w-full max-w-xl mx-auto">
         <CarouselContent>
           {images.map((src, index) => (
             <CarouselItem key={index}>

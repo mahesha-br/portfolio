@@ -1,5 +1,6 @@
 import { Diveder } from "@/app/page";
-import MdxRenderer from "@/components/mdx-renderer";
+import { MDXRemote } from "next-mdx-remote/rsc";
+import { components } from "@/components/mdx-components";
 import ProjectStackDisplay from "@/components/project-stack-display";
 import { getMdx } from "@/utils/lib/mdx";
 import { ArrowLeft, ArrowRight, ExternalLink, GithubIcon } from "lucide-react";
@@ -16,8 +17,7 @@ const POSTS_PATH = path.join(process.cwd(), "/app/projects/mdx/");
 export default async function SingleProjectPage({ params }: Props) {
   const { slug } = await params;
   const fullPath = path.join(POSTS_PATH, `${slug}`);
-  console.log(fullPath);
-  const { mdxSource, frontmatter } = await getMdx(fullPath);
+  const { content, frontmatter } = await getMdx(fullPath);
 
   const currentProject = projects.find((project) => project.slug === slug);
   const stack = currentProject?.stack || [];
@@ -67,29 +67,31 @@ export default async function SingleProjectPage({ params }: Props) {
             </div>
             <div className="w-full h-6 border-y"></div>
             <div className="w-full h-fit border-b py-2 px-4 flex items-center gap-4">
-              <Link
+              <a
                 href={sourceLink}
-                target="Github"
+                target="_blank"
+                rel="noopener noreferrer"
                 className=" px-3 py-2 cursor-pointer group flex justify-center items-center gap-2 font-medium rounded-3xl shadow-inner shadow-neutral-600 dark:shadow-neutral-500 dark:bg-neutral-700 hover:shadow-neutral-500 hover:bg-neutral-700 bg-neutral-800 text-neutral-100"
               >
                 <GithubIcon className="size-5 shrink-0" />
                 <span>Source</span>
                 <ArrowRight className=" group-hover:translate-x-1 transition-transform ease-in-out h-4 w-4 shrink-0" />
-              </Link>
-              <Link
+              </a>
+              <a
                 href={websiteLink}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="px-3 py-2 cursor-pointer group flex justify-center items-center gap-2 font-medium rounded-3xl shadow-inner shadow-neutral-600 dark:shadow-neutral-500 dark:bg-neutral-700 hover:shadow-neutral-500 hover:bg-neutral-700 bg-neutral-800 text-neutral-100"
               >
                 <ExternalLink className="size-5 shrink-0" />
                 <span>Live Preview</span>
                 <ArrowRight className=" group-hover:translate-x-1 transition-transform ease-in-out h-4 w-4 shrink-0" />
-              </Link>
+              </a>
             </div>
             <div className="w-full h-fit">
               <div className="md:w-3xl w-full h-full mx-auto px-5 py-2">
                 <div className="prose dark:prose-invert max-w-none">
-                  {mdxSource && <MdxRenderer source={mdxSource} />}
+                  {content && <MDXRemote source={content} components={components} />}
                 </div>
               </div>
             </div>

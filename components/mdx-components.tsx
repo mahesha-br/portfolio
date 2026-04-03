@@ -4,6 +4,14 @@ import { Diveder } from "@/app/page";
 import { MDXCarousel } from "./mdx-carousel";
 
 export const components = {
+  a: ({ className, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
+    <a
+      className={cn("cursor-pointer font-medium text-blue-600 underline underline-offset-4 dark:text-blue-500", className)}
+      target="_blank"
+      rel="noopener noreferrer"
+      {...props}
+    />
+  ),
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1
       className={cn(

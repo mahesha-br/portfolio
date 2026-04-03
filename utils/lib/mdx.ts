@@ -41,5 +41,5 @@ export async function getMdx(slug: string) {
     scope: data,
   })
 
-  return { mdxSource, frontmatter: data }
+  return { mdxSource, content, frontmatter: data }
 }
