@@ -9,8 +9,10 @@ type MDXCarouselProps = {
   alt?: string
 }
 
-export function MDXCarousel({ images, alt = "carousel image" }: MDXCarouselProps) {
-  if (!images || images.length === 0) return null
+export function MDXCarousel({ images, alt = "carousel image" }: any) {
+  const imageList = typeof images === "string" ? images.split(",").map(s => s.trim()) : (images || [])
+  
+  if (!imageList || imageList.length === 0) return null
 
   return (
     <div className="my-6">
@@ -22,7 +24,7 @@ export function MDXCarousel({ images, alt = "carousel image" }: MDXCarouselProps
         ]}
         className="w-full max-w-xl mx-auto">
         <CarouselContent>
-          {images.map((src, index) => (
+          {imageList.map((src: string, index: number) => (
             <CarouselItem key={index}>
               <div className="relative aspect-video overflow-hidden rounded-lg border">
                 <Image
