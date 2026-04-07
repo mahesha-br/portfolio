@@ -1,5 +1,6 @@
 "use client"
 
+import * as React from "react"
 import Image from "next/image"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./Carousel"
 import Autoplay from "embla-carousel-autoplay"
@@ -10,6 +11,9 @@ type MDXCarouselProps = {
 }
 
 export function MDXCarousel({ images, alt = "carousel image" }: any) {
+  const plugin = React.useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false })
+  )
   const imageList = typeof images === "string" ? images.split(",").map(s => s.trim()) : (images || [])
   
   if (!imageList || imageList.length === 0) return null
@@ -17,11 +21,11 @@ export function MDXCarousel({ images, alt = "carousel image" }: any) {
   return (
     <div className="my-6">
       <Carousel
-        plugins={[
-          Autoplay({
-            delay: 2000,
-          }),
-        ]}
+        opts={{
+          loop: true,
+          align: "start",
+        }}
+        plugins={[plugin.current]}
         className="w-full max-w-xl mx-auto">
         <CarouselContent>
           {imageList.map((src: string, index: number) => (
@@ -32,7 +36,7 @@ export function MDXCarousel({ images, alt = "carousel image" }: any) {
                   alt={`${alt} ${index + 1}`}
                   fill
                   draggable={false}
-                  className="object-cover selection:bg-transparent"
+                  className="object-cover selection:bg-transparent pointer-events-none"
                 />
               </div>
             </CarouselItem>

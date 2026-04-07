@@ -30,20 +30,17 @@ const defaultresults = [
   { name: "", iconName: "Socials" },
   {
     name: "https://x.com",
-    imageSource:
-      "https://assets.chanhdai.com/images/link-icons/liquid-glass/x.webp",
+    imageSource: "/x.webp",
     iconName: "X",
   },
   {
     name: "https://www.linkedin.com/in/mahesha-br-3096822b9/",
-    imageSource:
-      "https://assets.chanhdai.com/images/link-icons/liquid-glass/linkedin.webp",
+    imageSource: "/linkedin.webp",
     iconName: "Linkedin",
   },
   {
     name: "https://github.com/Mahesha-BR",
-    imageSource:
-      "https://assets.chanhdai.com/images/link-icons/liquid-glass/github.webp",
+    imageSource: "/github.webp",
     iconName: "Github",
   },
   { name: "", iconName: "Projects" },
