@@ -77,7 +77,7 @@ export default function DetailsComponent() {
             <Download className=" w-4 h-4 shrink-0 text-neutral-500 text-blue-500 dark:text-blue-400" />
           </div>
           <a
-            href="/MAHESHA_RESUME(1).pdf"
+            href="/mahesha_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline hover:underline-offset-2 font-medium text-ellipsis text-md font-mono md:leading-0 tracking-wid cursor-pointer"
